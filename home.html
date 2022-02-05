@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>  
+   
+    <!-- 
+         Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <title>Welcome To |VIT's First Autonomous Vehicle Team - AUTOZ</title>
+</head>
+
+<body>
+    <!-- Navbar ... -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href=""><img src="Autoz.jpg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Topics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#">AutoZ</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Learn Robotics </a>
+                        <a class="dropdown-item" href="#">Learn Manufacturing Robot </a>
+                        <a class="dropdown-item" href="#">Learn Robot Programming</a>
+                        <a class="dropdown-item" href="#">Learn All About Sensors</a>
+                       
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" action="" mehod="post">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+
+            <div class="mx-2">
+
+                <buton class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</buton>
+
+                <buton class="btn btn-danger" data-toggle="modal" data-target="#signupModal">Sign Up</buton>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Login modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to AutoZ </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="login.php" method="post">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="name@gmail.com" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" name="username" placeholder="Username"
+                                aria-label="Username" required aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" name="password" class="form-control" id="exampleInputPassword1"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Confirm Password</label>
+                            <input type="password" name="Cpassword" class="form-control" id="exampleInputPassword2"
+                                required>
+                        </div>
+                        <div class="col-auto my-1">
+                            <div class="custom-control custom-checkbox mr-sm-2">
+                                <input type="checkbox" name="remember" class="custom-control-input"
+                                    id="customControlAutosizing">
+                                <label class="custom-control-label" for="customControlAutosizing">Remember Me
+                                </label>
+                            </div><br>
+                        </div>
+                        <input type="submit" class="btn btn-primary" name="login" value="Login"></input>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SignUp modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Create Account & Get Connected with AutoZ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="signup.php" method="post">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" name="newemail" placeholder="name@gmail.com" class="form-control"
+                                id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" name="newusername" placeholder="Username"
+                                aria-label="Username" required aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" name="newpassword" placeholder="Atleast 8-digits long"
+                                class="form-control" id="exampleInputPassword1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword">Confirm Password</label>
+                            <input type="password" name="Confirmpassword" class="form-control"
+                                id="exampleInputPassword" required>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" name="new" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">New to this website ?</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">SignUp</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Carousel ... -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img  src="Front4.jpg" class="d-block w-100" alt="img">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome To AUTOZ | VIT's First Autonomous Vehicle Team</h2>
+                    <p>Technology,Automobile,Robots</p>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img  src="img.jpg" class="d-block w-100" alt="img">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Master Web Development With...</h2>
+                    <p>Html,Css,Bootstrap,PHP,JavaScript and Jquery</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="andr.jpg" class="d-block w-100" alt="img">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Build Your First Android Application With...</h2>
+                    <p>Android Studio,Xml,Python,Advanced Jav@</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="game.jpg" class="d-block w-100" alt="img">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Build Amazing 3D Games With...</h2>
+                    <p>Unity,Unreal Engine 4,<b>New</b> PyGame,java,Scratch</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="hack.jpg" class="d-block w-100" alt="img">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>New Ethical Hacking Special Course</h2>
+                    <p>Languages required -Python, SQL ,C/C++ , Js ,Ruby</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="i.jpg" class="d-block w-100" alt="img">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Master New Programming Languages...</h2>
+                    <p>Android Studio,C#,Ruby,Advanced Jav@</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    </br></br></br></br>
+    <h1 style="text-align: center; ">Our Gallery </h1>
+    </br></br>
+
+    <!-- Cards -->
+    
+    <!--Card-1 -->
+    <div class="card mb-3">
+        <img src="truck.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Automated Cars | Self Driving Cars</h5>
+          <p class="card-text">Self-driving car, also known as an autonomous vehicle (AV or auto), driverless car, or robotic car (robo-car),is a vehicle that is capable of sensing its environment and moving safely with little or no human input.This technology is a major game changer and may have an impact on multiple industries and other circumstances.Self-driving cars combine a variety of sensors to perceive their surroundings, such as radar, lidar, sonar, GPS, odometry and inertial measurement units.Advanced control systems interpret sensory information to identify appropriate navigation paths, as well as obstacles and relevant signage.
+
+            Possible implementations of the technology include personal self-driving vehicles, shared robotaxis, and connected vehicle platoons. Several projects to develop a fully self-driving commercial car are in various stages of development, but there are no self-driving cars in the consumer market today. Autonomy in vehicles is often categorized in six levels, according to a system developed by the Society of Automotive Engineers (SAE). These are detailed in this article, but can be roughly understood as Level 0 - no automation; Level 1 - hands on/shared control; Level 2 - hands off; Level 3 - eyes off; Level 4 - mind off, and Level 5 - steering wheel optional.
+
+        </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <br><br>
+      <!--Card-2-->
+      <div class="card mb-3">
+        <img src="robot1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Robotics | The Future Of World </h5>
+          <p class="card-text">We’re really bound to see the promise of the robotics industry sooner, rather than later, as artificial intelligence and software also continue to progress. In the near future, thanks to advances in these technologies, robots will continue getting smarter, more flexible and more energy efficient. They’ll also continue to be a main focal point in smart factories, where they’ll take on more difficult challenges and help to secure global supply chains.
+
+            Though relatively young, the robotics industry is filled with an admirable promise of progress that science fiction could once only dream about. From the deepest depths of our oceans to thousands of miles in outer space, robots will be found performing tasks that humans couldn’t dream of achieving alone.Robots all consist of some sort of mechanical construction. The mechanical aspect of a robot helps it complete tasks in the environment for which it’s designed. For example, the Mars 2020 Rover’s wheels are individually motorized and made of titanium tubing that help it firmly grip the harsh terrain of the red planet.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <br><br>
+      <!--Card-3-->
+      <div class="card mb-3">
+        <img src="robot.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Human Robot | Servant Of Human</h5>
+          <p class="card-text">The remarkable mind-reading robot servant that humans can control using nothing but their THOUGHTS and hand gestures .The machine, named Baxter, reads human brainwaves in real-time so that it knows when a human is unhappy with its actions. 
+
+            If a human think a mistake has been made, Baxter takes notice - and corrects himself.
+            
+            Baxter's owner can then make subtle hand gestures to direct the machine into performing a different task.
+            
+            Scientists say the technology is designed to make robots acts like an extension of a person's will, without any training. Importantly, they showed that the system works on people it's never seen before, meaning that it companies could deploy it in real-world settings without needing to train it on users.
+
+            To create the system, the team harnessed the power of electroencephalography (EEG) for brain activity and electromyography (EMG) for muscle activity, putting a series of electrodes on the users' scalp and forearm.  </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <!--Card-4-->
+      <div class="card mb-3">
+        <img src="robot2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Robot Applications | No Human Intervention </h5>
+          <p class="card-text">A robot is a machine—especially one programmable by a computer—capable of carrying out a complex series of actions automatically.[2] A robot can be guided by an external control device, or the control may be embedded within. Robots may be constructed to evoke human form, but most robots are task-performing machines, designed with an emphasis on stark functionality, rather than expressive aesthetics.
+
+            Robots can be autonomous or semi-autonomous and range from humanoids such as Honda's Advanced Step in Innovative Mobility (ASIMO) and TOSY's TOSY Ping Pong Playing Robot (TOPIO) to industrial robots, medical operating robots, patient assist robots, dog therapy robots, collectively programmed swarm robots, UAV drones such as General Atomics MQ-1 Predator, and even microscopic nano robots. By mimicking a lifelike appearance or automating movements, a robot may convey a sense of intelligence or thought of its own. Autonomous things are expected to proliferate in the future, with home robotics and the autonomous car as some of the main drivers.[3]
+            
+            The branch of technology that deals with the design, construction, operation, and application of robots,[4] as well as computer systems for their control, sensory feedback, and information processing is robotics. These technologies deal with automated machines that can take the place of humans in dangerous environments or manufacturing processes, or resemble humans in appearance, behavior, or cognition. Many of today's robots are inspired by nature contributing to the field of bio-inspired robotics.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <!--Card-5-->
+      <div class="card mb-3">
+        <img src="robotics.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">AI and Machine Learning </h5>
+          <p class="card-text">When IoT technologies, robots and humans interoperate, advanced robotic capabilities are enabled, along with novel applications, and by extension, new business opportunities. Interoperability challenges remain, but solutions are available to overcome them.Today’s sensor-driven revolution is transforming robots from rote machines into cognitive collaborators. They have become a key link in a dynamic continuum that encompasses humans, other machines, and the digital environments in which they operate.
+
+            The potential payoffs of sensor-guided, human – robot collaboration are huge. Examples range from protecting workers and increasing productivity, to driving new revenue streams through innovation and more.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <!--Card-6-->
+      <div class="card mb-3">
+        <img src="img1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Robot Programming : Giving Brain To Your Robot</h5>
+          <p class="card-text">Robotics involves designing, constructing, and operating intelligent machines called robots.
+            The word robot comes from the Slavic word robota, which means servant.
+            The major robotics fields are operator interface, locomotion, effectors, programming, and perception.
+            Robot programming is the development of a control scheme for how a machine interacts with its environment and achieve its goals.
+            Robot Operating System is a middleware — a collection of software frameworks for robot software development.
+            A robot control software is a program for controlling robots.
+            Popular programming languages in robotics include C / C++, Python, JAVA, C# /.NET, MATLAB, among others.
+            Robot programming is fast becoming a big deal as more companies show interests and invest in robots. Programming refers to the commands that enable robots to function in a specific situation. It involves designing and building an executable computer program to accomplish particular tasks.
+
+            Over one thousand languages exist today for programming robots. To understand how this field of robotics work, we must delve a little deeper.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+
+      <!--Card-7-->
+      <div class="card mb-3">
+        <img src="Guided.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Automated Guided Vehicle | Applications of Robotics</h5>
+          <p class="card-text">An automated guided vehicle or automatic guided vehicle (AGV), also called autonomous mobile robot (AMR), is a portable robot that follows along marked long lines or wires on the floor, or uses radio waves, vision cameras, magnets, or lasers for navigation. They are most often used in industrial applications to transport heavy materials around a large industrial building, such as a factory or warehouse. Application of the automatic guided vehicle broadened during the late 20th century.The AGV can tow objects behind them in trailers to which they can autonomously attach. The trailers can be used to move raw materials or finished product. The AGV can also store objects on a bed. The objects can be placed on a set of motorized rollers (conveyor) and then pushed off by reversing them. AGVs are employed in nearly every industry, including pulp, paper, metals, newspaper, and general manufacturing. Transporting materials such as food, linen or medicine in hospitals is also done.
+
+            An AGV can also be called a laser guided vehicle (LGV). In Germany the technology is also called Fahrerloses Transportsystem (FTS) and in Sweden förarlösa truckar. Lower cost versions of AGVs are often called Automated Guided Carts (AGCs) and are usually guided by magnetic tape. The term AMR is sometimes [1] used to differentiate the mobile robots that do not rely in their navigation on extra infrastructure in the environment (like magnetic strips or visual markers) from those that do; the latter are then called AGVs.AGCs are available in a variety of models and can be used to move products on an assembly line, transport goods throughout a plant or warehouse, and deliver loads.
+
+                </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+
+      <!--Card-8-->
+      <div class="card mb-3">
+        <img src="img.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Manufacturing Robots | Automated Process Robotics In Manufacturing</h5>
+          <p class="card-text">The expertise of a team of engineers is necessary to build an advanced robot. For this reason, the major robotics fields are operator interface, mobility or locomotion, manipulators and effectors, programming, sensing and perception.
+
+            1. Operator Interface
+            The operator interface refers to the interaction between a robot and its human controller. It’s the mechanism of communication between an individual and his or her machine.
+            
+            For example, a joystick controller serves as the operator interface between a gamer and the console.
+            
+            2. Mobility or Locomotion
+            Mobility or locomotion describes how the robot moves from one place to another within a given space. And it varies based on the type of machine.
+            
+            For instance, flying robots and drones use propellers for movement. Similarly, humanoids walk on two legs like humans. Other mobility options include fins and wheels.
+            
+            3. Manipulators and Effectors
+            It refers to the specific component of a machine that makes it ideal for performing particular tasks. Such parts could include pushers, claws, grippers, mechanical arms, and fingers.
+            
+            For example, industrial robots are usually equipped with two-finger grippers for moving things.
+            
+            4. Sensing and Perception
+            Sensing and perception focus on how a machine identifies things in its environment and react to these factors. Thanks to this field, a robot can access information such as:
+            
+            Where it is
+            Where to go
+            How to avoid obstacles
+            For example, when a robot encounters an obstacle, what direction should it take. Programmers feed such components into the machine to help it make the right decision.
+            
+            5. Programming
+            Programming refers to the commands that enable robots to function in a specific situation. It involves designing and building an executable computer program to accomplish particular tasks.
+            
+            Over one thousand languages exist today for programming robots. To understand how this field of robotics work, we must delve a little deeper.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+
+
+     
+
+    <footer class="container">
+        <p class="float-right"><a href="#"><u>Back To Top</u></a></p>
+        <p>&copy 2020-2021 <u>AutoZ</u>, Inc ...<a href="#">Privacy</a></p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
